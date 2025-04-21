@@ -1,0 +1,21 @@
+{
+  "name": "rtj6cj",
+  "version": "0.0.11",
+  "description": null,
+  "main": "index.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "gvergnaud",
+  "license": "ISC",
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {}
+}
