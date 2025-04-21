@@ -1,0 +1,137 @@
+# 1er jour
+## Opening Keynote - Engineering for Software - Dave Farley
+
+début top sur l'apport de la science et de la programmation, et toute la philosophie derrière le métier d'ingénieur
+
+## Hands on - Techniques for getting legacy code under control - Emily Bache
+If you are a developer you are probably working on a large and complicated codebase. Unfortunately a lot of existing code lacks automated unit tests and adding them can be challenging, particularly if the code is old or poorly structured. In this session we'll look at two related refactoring techniques - "Peel" and "Slice". These techniques are something of a last resort when you're facing long methods with a mix of important logic, side effects and awkward dependencies. Peel and Slice can help you to get some unit tests in place so you can refactor to a better structure.
+
+Refactoring method sympa, lib acceptance-test à utiliser
+
+https://github.com/emilybache/IceCreamForecasting-Refactoring-Kata.git
+
+## Hands-on - Slow (code) retreat - Philippe Bourgau
+
+"Simplicity--the art of maximizing the amount of work not done--is essential" We're definitely not there yet!
+
+Isn't it time we deal with the stress and burnout that is rampant in the industry?
+
+Let's try slow programming! Using TDD and TCR as neurofeedback tools that will remind us whenever we are rushing, we will experiment with various flavors of mob or solo programming and discover what we enjoy most! Here are the benefits we could expect:
+- Less stress, by focusing on what we are doing NOW, in the present moment
+- More value creation by focusing on what really matters
+- Less technical debt
+- Better interactions with colleagues
+- More clarity about what to do, easier decision making
+- A chance to better tackle the ethical challenges of technology
+- Happier families by bringing less stress home
+- A form of deliberate practice of zen
+- Helping each other!
+
+slides téléchargés, slow movement mon slide préféré, TCR tool dans le kata
+
+https://github.com/philou/Kata-Slow-Code
+
+## Talk - Half a decade of mob programming - Ulrika Malmgren
+How many things have you done every single work day for 5 years straight? Mob programming has been in my team’s life as naturally as coffee breaks, weekly department meetings and git push. Javascript frameworks have come and gone, but we’re still mobbing. For the first two years, in person at the office and after that remotely.
+Some of the benefits for our team have been knowledge sharing, high quality work and having fun together. While working in the mob, our decisions are better than our individual ones, we are more likely to prioritize continuous improvement and we take advantage of each other’s strengths. We have had our conflicts and our problems, but we still prefer this way of working over anything else..
+In this talk, I’ll share my experiences from working together as a team on the same code every day. If you’re curious about what that could look like, come to hear that story. If you’ve tried it yourself but are not convinced, this talk will give you some tips to be able to move past those obstacles. Regardless of whether you’re interested in adding some mob sessions or doing it full time, come to this session to get some insights on what successful mob programming can look like. 
+
+Avec ce talk et le hands on, je suis sensibilisé à la façon d'être en mob programming.
+
+## Ending Keynote - Hedy: gradual and multilingual programming for education - Felienne Hermans
+A tester avec les enfants ?
+Keynote très rigolote et dynamique
+
+# 2ème jour
+## Opening Keynote - Compassionate Refactoring - Clare Sudbery
+
+Citation: Refactoring: make it easier to understand and cheaper to modify (Martin folwer)
+
+Partie très instructive : Refactoring blokers :
+- external pressure
+- lack of patience
+- seeking perfection
+- guilt- shame- despair
+- ... (see slide)
+- no  compassion
++ how to facilitate Refactoring (reprendre slides)
+
+## Hands-on - Living documentation to validate the application - Sébastien Fauvel & Fabien HIEGEL
+
+To ensure the maintainability of a project, 3 elements are fundamental: code quality, automated tests and documentation.
+
+The objective of this workshop is to experiment with an approach which emphasizes documentation.
+It then becomes the reference to ensure non-regression.
+There are no more tests as we usually know them.
+They are replaced by the generation of the readable description of the behaviors from the application.
+
+The implementation is very simple using the tools we already have in our projects.
+The principle very widely uses the concept of living documentation for the generation of documentation.
+Validation is inspired by characterization test (or golden master) techniques.
+The aim is to obtain readable documentation as the bdd seeks to do. But by freeing ourselves from the gherkin constraint, we can go much further in terms of expressiveness.
+
+This workshop will give you the opportunity to start producing living documentation
+and discover how to make it a non-regression tool by integrating it with automated testing frameworks.
+
+Hand on très intéressant + voir site speaker + JQA Java quality assistant pour la doc de composants/architecture
+https://github.com/sfauvel/Parrot-Refactoring-Kata/tree/main/Java
+https://github.com/sfauvel/doc_as_test_workshop/tree/main/pages
+https://sfauvel.github.io/livingdocumentation/
+
+## Hands-on - Domain Modelling Coding Hands-on - Thomas Coopman & Michel Grootjans
+
+Get ready to dive into the exciting world of domain modelling.
+
+In this workshop, you'll have the opportunity to apply your existing coding skills and improve your domain modelling skills in a hands-on environment.
+
+In this workshop, we provide you with the domain knowledge and scenarios you need to design a working model using your chosen programming language. We'll guide with questions and exercises, that are designed to challenge you and incrementally evolve your model.
+
+This hands-on improves when done collaboratively. We'll encourage you to work in pairs or small groups and share your knowledge with the other participants.
+
+https://github.com/domain-modelling/recycle-java
+
+Pairing avec un partenaire très bon.
+Appris nouveaux racourcis IDE à mettre en oeuvre.
+
+## Ending Keynote - Tidy First? A Daily Practice of Empirical Software Design - Kent Beck
+
+Photos à inclure
+Tout le design et le cout vient principalement du couplage et de la cohésion
+Mais aussi des interactions entre les gens
+
+
+# A faire
+- lib acceptance-test à apprendre
+- refaire le hands-on livingdocumentation
+- refaire le hands-on https://github.com/domain-modelling/recycle-java
+- Lien à regarder : https://github.com/ddd-crew/ddd-starter-modelling-process
+- Rechercher kata pour masterer l'IDE
+
+# A voir
+- Bounded Contexts: Manage the Understandability of Your Systems - Mathias Verraes & Gien Verschatse
+  From Parnas' paper in the 1970's to microservices in the 2010's, we've always used modularisation as a way to manage complexity in software. And yet, we still end up with big balls of mud. Perhaps technical separation isn’t cutting it. We’ve also tried separating into business domains, but that’s not enough either: software wants to be deeply interconnected, spanning different domains, and doesn’t respect those boundaries.
+  Bounded Contexts provide an alternative. We can separate semantically, looking at the domain models that underlie our systems, the language being used, and the meanings of terms. We can draw “understandability boundaries”: separations that look at how concepts in our system are understood together (or can be understood autonomously). If we organise the teams along the same lines, they need to understand fewer concepts to be productive, they lower cognitive load, and need less coordination with other teams.
+  Doing this kind of work is not free. But in the 20 years since the concept was introduced in Domain-Driven Design, we’ve developed patterns and heuristics to guide us.
+- Riding the elevator: Domain-driven Design in the Penthouse - Michael Plöd
+  In his book The Software Architect Elevator Gregor Hohpe uses the analogy of an elevator in a high building for the daily work which software architects should be doing: They are supposed to talk to folks who build and maintain stuff in the engine room but also make sure that the managment which is residing on the penthouse floors understand and gain interest in what is happening in the engine room.
+  In my talk I will build upon Gregors ideas and show you how you can leverage ideas from Domain Driven Design in this daunting communication tasks. But rest assured: I will not only present the obvious strategic Domain Drivend Design elements like core / supporting / generic subdomains here. We will go deeper and explore links to other initiatives in an org like DevOps, Agile and / org Design Thinking as well which are of interest for the leadership of an organization.
+  We as a community should get better at this topic because Domain Driven Design needs a healthy, blame free and safe environment in order to flourish and this environment needs to be established and lived by the leadership folks.
+- Not dead, just resting! Multi-product teams and a magnificent maintenance mode - Steve Smith
+  How do you do maintenance mode in a DevSecOps world, and why is that even a question?
+  Maintenance mode. Keeping the lights on. BAU support. Evergreening. To-may-to, to-mah-to. It happens when there’s no more funding for feature development in live digital services and data pipelines. There’s a need to resize teams to cut costs, to reassign people to start on new propositions…
+  … but those live services aren’t dead, they’re just resting! Who does the library upgrades, security patches and defect fixes? Who preserves availability targets when there’s no more money to look after the live services that are making money?
+  I’ve spent time with tens of different scaleups and enterprise organisations. Too many have used their operations team as a maintenance mode solution, and wondered afterwards why technical quality, reliability, and employee retention all took a hit. And if you think transitioning a live service into an operations team is hard, you should see the reverse when it’s back to the developers for more features.
+  I’ll cover pros, cons, and examples from three different maintenance mode solutions - the operations team, regional developer support teams, and multi-product teams. And I’ll explain why multi-product teams as an extension of the You Build It You Run It operating model can give you a truly magnificent maintenance mode.
+- Improving Software Quality with Contract Testing and Pact
+  Software development and deployment are complex processes, and communication between different software components is critical for the success of the entire system. Unfortunately, even minor changes to a software component can cause unpredictable effects on other components, leading to the failure of the entire system. This is where contract testing comes in. Contract testing is a powerful technique for verifying communication between different components of a system. Pact, a contract testing tool, helps ensure that the communication between two software components is reliable, robust and meets the expectations of both components.
+  In this talk, we will thoroughly explore contract testing and its importance in today's distributed, micro-service environment. You'll also get an overview of how Pact, a free, open-source tool, can help make the process smoother and more effective. We will cover the following topics:
+  - What is a software contract and why is it important
+  - The workflow surrounding consumer-driven contract testing
+  - The challenges of testing software communication in component-based systems
+  - The basics of contract testing with Pact
+  Attendees will leave this session with a deeper understanding of contract testing, the need for contract testing when working with micro-services in a rapid delivery environment, and insights into how Pact can improve the overall quality of your applications.
+- The business impact of code quality - Adam Tornhill
+  Code quality is an abstract concept that fails to get traction at the business level. Consequently, software companies keep trading code quality for new features. The resulting technical debt is estimated to waste up to 42% of developers' time, causing stress and uncertainty, as well as making our job less enjoyable than it should be. Without clear and quantifiable benefits, it's hard to build a business case for code quality.
+  In this talk, Adam takes on the challenge by tuning the code analysis microscope towards a business outcome. We do that by combining novel code quality metrics with analyses of how the engineering organization works with the code. We then take those metrics a step further by connecting them to values like time-to-market, customer satisfaction, and road-map risks. This makes it possible to a) prioritize the parts of your system that benefit the most from improvements, b) communicate quality trade-offs in terms of actual costs, and c) identify high-risk parts of the application so that we can focus our efforts on the areas that need them the most. All recommendations are supported by data and brand new real-world research. This is a perspective on software development that will change how you view code. Promise.
+- Architecting for Independent Value Streams - Nick Tune
+  Software architecture helps businesses to achieve competitive advantage in many ways, like reducing costs and improving time-to-market. But to extract architecture's full potential, the software, business domain, and organization need to be aligned as independent value streams. This talk is about the principles, heuristics, and practical techniques that engineers, architects, and leaders can apply to architect their systems as independent value streams.
