@@ -1,0 +1,21 @@
+Pas que pour spring java et junit, également pour les vulnérabilités la code quality (OWASP, SonarQube, Fortify)
+
+Slides présentation téléchargés sur le téléphone
+
+Assertj -> migration hamcrest plus maintenu
+
+Plus besoin de lire les docs de migration pour voir les nouvelles features
+
+Complétion dans IntelliJ pour écrire de nouvelles règles (plugin à télécharger)
+
+Adoption de la communauté
+
+Liste de tous les recipes dans la doc
+
+Préconditions pour limiter la portée des modifications
+
+On peut tester des recipes en ligne sur des dépôts open-source
+
+Refaster template : @BeforeTemplate @AfterTemplate -> templates présent sur le repo google errorprone
+
+https://github.com/moderneinc/rewrite-recipe-starter pour commencer à développer ces propres recipes
